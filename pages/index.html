@@ -31,111 +31,114 @@
             <h2>This is a simple financial calculator</h2>
             <p>I have created a financial calculator. Check out the function names and parameters below to learn how to use
                 it.
-            <section>
-                <h2>perMonthRetirementSavings</h2>
-                <form action="/results/perMonthRetirementSavings" method="POST">
-                <input type="text" name="years" placeholder="years"/>
-                <input type="text" name="perMonth" placeholder="perMonth"/>
-                <input type="text" name="interestRate" placeholder="interestRate"/>       
-                <button type="submit">Result</button>             
-                </form>
-                <table>
-                    <tr>
-                        <th>parameter</th>
-                        <th>description</th>
-                        <th>value</th>
-                    </tr>
-                    <tr>
-                        <td>years</td>
-                        <td>yearsUntilRetirement, integer number</td>
-                        <td>20</td>
-                    </tr>
-                    <tr>
-                        <td>perMonth</td>
-                        <td>amountSavingPerMonth, integer number</td>
-                        <td>1000</td>
-                    </tr>
-                    <tr>
-                        <td>interestRate</td>
-                        <td>yearlyInterestRateOfInvestment, decimal format</td>
-                        <td>0.03</td>
-                    </tr>
-                </table>
-            </section>
-            <section>
-                <h2>investedAmount</h2>
-                <form action="/results/investedAmount" method="POST">
-                    <input type="text" name="years" placeholder="years" />
-                    <input type="text" name="initial" placeholder="initial" />
-                    <input type="text" name="interestRate" placeholder="interestRate" />
-                    <button type="submit">Result</button>
-                </form>
-                <table>
-                    <tr>
-                        <th>parameter</th>
-                        <th>description</th>
-                        <th>value</th>
-                    </tr>
-                    <tr>
-                        <td>years</td>
-                        <td>yearsInvesting, integer number</td>
-                        <td>20</td>
-                    </tr>
-                    <tr>
-                        <td>initial</td>
-                        <td>initialAmount, number</td>
-                        <td>5000</td>
-                    </tr>
-                    <tr>
-                        <td>interestRate</td>
-                        <td>yearlyInterestRateOfInvestment, decimal format</td>
-                        <td>0.03</td>
-                    </tr>
-                </table>
-            </section>
-            <section>
-                <h2>loanPayoff</h2>
-                <form action="/results/loanPayoff" method="POST">
-                <input type="text" name="monthlyAmount" placeholder="monthlyAmount"/>
-                <input type="text" name="loanAmount" placeholder="loanAmount"/>
-                <input type="text" name="interestRate" placeholder="interestRate"/>       
-                <button type="submit">Result</button>             
-                </form>
-                <table>
-                    <tr>
-                        <th>parameter</th>
-                        <th>description</th>
-                        <th>value</th>
-                    </tr>
-                    <tr>
-                        <td>monthlyAmount</td>
-                        <td>monthlyPaymentAmount, integer number</td>
-                        <td>800</td>
-                    </tr>
-                    <tr>
-                        <td>loanAmount</td>
-                        <td>initialLoanAmount, number</td>
-                        <td>2500</td>
-                    </tr>
-                    <tr>
-                        <td>interestRate</td>
-                        <td>yearlyInterestRateOfInvestment, decimal format</td>
-                        <td>0.03</td>
-                    </tr>
-                </table>
-            </section>
+                <section>
+                    <h2>perMonthRetirementSavings</h2>
+                    <form action="/results/perMonthRetirementSavings" method="POST">
+                        <input type="text" id="form1_input_years" name="years" placeholder="years" />
+                        <input type="text" id="form1_input_perMonth" name="perMonth" placeholder="perMonth" />
+                        <input type="text" id="form1_input_interestRate" name="interestRate" placeholder="interestRate" />
+                        <button type="submit" id="form1_btn_submit">Result</button>
+                    </form>
+                    <table>
+                        <tr>
+                            <th>parameter</th>
+                            <th>description</th>
+                            <th>value</th>
+                        </tr>
+                        <tr>
+                            <td>years</td>
+                            <td>yearsUntilRetirement, integer number</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>perMonth</td>
+                            <td>amountSavingPerMonth, integer number</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>interestRate</td>
+                            <td>yearlyInterestRateOfInvestment, decimal format</td>
+                            <td>0.03</td>
+                        </tr>
+                    </table>
+                </section>
+                <section>
+                    <h2>investedAmount</h2>
+                    <form action="/results/investedAmount" method="POST">
+                        <input type="text" id="form2_input_years" name="years" placeholder="years" />
+                        <input type="text" id="form2_input_initial" name="initial" placeholder="initial" />
+                        <input type="text" id="form2_input_interestRate" name="interestRate" placeholder="interestRate" />
+                        <button type="submit" id="form2_btn_submit">Result</button>
+                    </form>
+                    <table>
+                        <tr>
+                            <th>parameter</th>
+                            <th>description</th>
+                            <th>value</th>
+                        </tr>
+                        <tr>
+                            <td>years</td>
+                            <td>yearsInvesting, integer number</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>initial</td>
+                            <td>initialAmount, number</td>
+                            <td>5000</td>
+                        </tr>
+                        <tr>
+                            <td>interestRate</td>
+                            <td>yearlyInterestRateOfInvestment, decimal format</td>
+                            <td>0.03</td>
+                        </tr>
+                    </table>
+                </section>
+                <section>
+                    <h2>loanPayoff</h2>
+                    <form action="/results/loanPayoff" method="POST">
+                        <input type="text" id="form3_input_monthlyAmount" name="monthlyAmount" placeholder="monthlyAmount" />
+                        <input type="text" id="form3_input_loanAmount" name="loanAmount" placeholder="loanAmount" />
+                        <input type="text" id="form3_input_interestRate" name="interestRate" placeholder="interestRate" />
+                        <button type="submit" id="form3_btn_submit">Result</button>
+                    </form>
+                    <table>
+                        <tr>
+                            <th>parameter</th>
+                            <th>description</th>
+                            <th>value</th>
+                        </tr>
+                        <tr>
+                            <td>monthlyAmount</td>
+                            <td>monthlyPaymentAmount, integer number</td>
+                            <td>800</td>
+                        </tr>
+                        <tr>
+                            <td>loanAmount</td>
+                            <td>initialLoanAmount, number</td>
+                            <td>2500</td>
+                        </tr>
+                        <tr>
+                            <td>interestRate</td>
+                            <td>yearlyInterestRateOfInvestment, decimal format</td>
+                            <td>0.03</td>
+                        </tr>
+                    </table>
+                </section>
         </main>
         <section>
-                <h2>About Yumeng Song</h2>
-                <p>I am a graduate student in computer science. I want to be a full stack web developer.</p>
-                <ul>
-                    <li> What is your major? -Computer Science</li>
-                    <li> What is your favourite song? -Fly me to the moon</li>
-                    <li> What is one thing you hope to learn in CS-546? -Write a web site.</li>
-                    <li> What programming languages do you like to use? -Now it is JavaScript ;)</li>
-                    <li> What is your favourite animal? -Dog!</li>
-                </ul>
+            <h2>About Yumeng Song</h2>
+            <p>I am a graduate student in computer science. I want to be a full stack web developer.</p>
+            <ul>
+                <li> What is your major? -Computer Science</li>
+                <li> What is your favourite song? -Fly me to the moon</li>
+                <li> What is one thing you hope to learn in CS-546? -Write a web site.</li>
+                <li> What programming languages do you like to use? -Now it is JavaScript ;)</li>
+                <li> What is your favourite animal? -Dog!</li>
+            </ul>
         </section>
+    </div>
+
+    <div class="alert alert-danger calculator-alerts hidden" id="error-message">
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -148,6 +151,9 @@
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/assets/js/bootstrap.min.js "></script>
+
+    <script src="/assets/js/validators.js"></script>
+
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 // We first require our express package
 var express = require('express');
 var bodyParser = require('body-parser');
-var myData = require('./data.js')
+var myData = require('./data.js');
 
 // This package exports the function to create an express instance:
 var app = express();
@@ -44,9 +44,9 @@ app.post("/results/perMonthRetirementSavings", function (request, response) {
         // var interestRate = query.interestRate;
 
         var result = myData.retirementAmountIfSavingPerMonth(years, perMonth, interestRate);
-        if (!years || !perMonth || !interestRate || years < 0 || perMonth < 0 || interestRate < 0) {
-            response.status(500).render('pages/error', { errorType: "Invaild parameter(s)", errorMessage: 'Please check your input.' });
-        }
+        // if (!years || !perMonth || !interestRate || years < 0 || perMonth < 0 || interestRate < 0) {
+        //     response.status(500).render('pages/error', { errorType: "Invaild parameter(s)", errorMessage: 'Please check your input.' });
+        // }
         response.render('pages/results', { operationTitle: 'perMonthRetirementSavings', result: result });
     } catch (message) {
         response.status(500).render('pages/error', { errorType: "Issue loading question!", errorMessage: "message" });
@@ -59,9 +59,7 @@ app.post("/results/investedAmount", function (request, response) {
         var initial = request.body.initial;
         var interestRate = request.body.interestRate;
         var result = myData.investesAmountAfterSomeYears(years, initial, interestRate);
-        if (!years || !initial || !interestRate || years < 0 || initial < 0 || interestRate < 0) {
-            response.status(500).render('pages/error', { errorType: "Invaild parameter(s)", errorMessage: 'Please check your input.' });
-        }
+        
         response.render('pages/results', { operationTitle: 'investedAmount', result: result });
     } catch (message) {
         response.status(500).render('pages/error', { errorType: "Issue loading question!", errorMessage: message });
@@ -74,9 +72,7 @@ app.post("/results/loanPayoff", function (request, response) {
         var loanAmount = request.body.loanAmount;
         var interestRate = request.body.interestRate;
         var result = myData.monthsToPayOffLoan(monthlyAmount, loanAmount, interestRate);
-        if (!monthlyAmount || !loanAmount || !interestRate || monthlyAmount < 0 || loanAmount < 0 || interestRate < 0) {
-            response.status(500).render('pages/error', { errorType: "Invaild parameter(s)", errorMessage: 'Please check your input.' });
-        }
+        
         response.render('pages/results', { operationTitle: 'loanPayoff', result: result });
     } catch (message) {
         response.status(500).render('pages/error', { errorType: "Issue loading question!", errorMessage: message });
