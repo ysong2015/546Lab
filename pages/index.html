@@ -33,11 +33,30 @@
                 it.
                 <section>
                     <h2>perMonthRetirementSavings</h2>
-                    <form action="/results/perMonthRetirementSavings" method="POST">
-                        <input type="text" id="form1_input_years" name="years" placeholder="years" />
-                        <input type="text" id="form1_input_perMonth" name="perMonth" placeholder="perMonth" />
-                        <input type="text" id="form1_input_interestRate" name="interestRate" placeholder="interestRate" />
-                        <button type="submit" id="form1_btn_submit">Result</button>
+                    <form class="form form-horizontal" id="basic-calculator1" action="/results/perMonthRetirementSavings" method="POST">
+                        <div class="form-group">
+                            <label for="form1_input_years" class="col-sm-2 control-label">First Parameter</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="form1_input_years" name="years" placeholder="years">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form1_input_perMonth" class="col-sm-2 control-label">Second Parameter</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="form1_input_perMonth" name="perMonth" placeholder="perMonth">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form1_input_interestRate" class="col-sm-2 control-label">Third Parameter</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="form1_input_interestRate" name="interestRate" placeholder="interestRate">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-6">
+                                <button type="submit" class="btn btn-default" id="form1_btn_submit">Result</button>
+                            </div>
+                        </div>
                     </form>
                     <table>
                         <tr>
@@ -64,11 +83,30 @@
                 </section>
                 <section>
                     <h2>investedAmount</h2>
-                    <form action="/results/investedAmount" method="POST">
-                        <input type="text" id="form2_input_years" name="years" placeholder="years" />
-                        <input type="text" id="form2_input_initial" name="initial" placeholder="initial" />
-                        <input type="text" id="form2_input_interestRate" name="interestRate" placeholder="interestRate" />
-                        <button type="submit" id="form2_btn_submit">Result</button>
+                    <form class="form form-horizontal" id="basic-calculator2" action="/results/investedAmount" method="POST">
+                        <div class="form-group">
+                            <label for="form2_input_years" class="col-sm-2 control-label">First Parameter</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="form2_input_years" name="years" placeholder="years">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form2_input_initial" class="col-sm-2 control-label">Second Parameter</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="form2_input_initial" name="initial" placeholder="initial">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form2_input_interestRate" class="col-sm-2 control-label">Third Parameter</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="form2_input_interestRate" name="interestRate" placeholder="interestRate">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-6">
+                                <button type="submit" class="btn btn-default" id="form2_btn_submit">Result</button>
+                            </div>
+                        </div>
                     </form>
                     <table>
                         <tr>
@@ -95,11 +133,30 @@
                 </section>
                 <section>
                     <h2>loanPayoff</h2>
-                    <form action="/results/loanPayoff" method="POST">
-                        <input type="text" id="form3_input_monthlyAmount" name="monthlyAmount" placeholder="monthlyAmount" />
-                        <input type="text" id="form3_input_loanAmount" name="loanAmount" placeholder="loanAmount" />
-                        <input type="text" id="form3_input_interestRate" name="interestRate" placeholder="interestRate" />
-                        <button type="submit" id="form3_btn_submit">Result</button>
+                    <form class="form form-horizontal" id="basic-calculator3" action="/results/loanPayoff" method="POST">
+                        <div class="form-group">
+                            <label for="form2_input_years" class="col-sm-2 control-label">First Parameter</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="form3_input_monthlyAmount" name="monthlyAmount" placeholder="monthlyAmount">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form3_input_loanAmount" class="col-sm-2 control-label">Second Parameter</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="form3_input_loanAmount" name="loanAmount" placeholder="loanAmount">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form3_input_interestRate" class="col-sm-2 control-label">Third Parameter</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="form3_input_interestRate" name="interestRate" placeholder="interestRate">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-6">
+                                <button type="submit" class="btn btn-default" id="form3_btn_submit">Result</button>
+                            </div>
+                        </div>
                     </form>
                     <table>
                         <tr>
